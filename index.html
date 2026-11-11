@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="محمد شحاتة للتسويق العقاري - بيع وشراء وإيجار العقارات في كفر الدوار">
+<title>محمد شحاتة للتسويق العقاري | كفر الدوار</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">م ش</span><span><b>محمد شحاتة</b><small>للتسويق العقاري</small></span></a>
+  <nav><a href="#listings">العقارات</a><a href="#request">اطلب عقارك</a><a href="#about">عن المكتب</a></nav>
+  <a class="call" href="https://wa.me/201034719960" target="_blank" rel="noopener">تواصل واتساب</a>
+</header>
+<main>
+<section class="hero">
+ <div class="hero-copy"><span class="eyebrow">وجهتك العقارية في كفر الدوار</span>
+ <h1>عقارك المناسب<br><em>أصبح أقرب إليك</em></h1>
+ <p>بيع وشراء وإيجار الشقق والبيوت والمحلات والأراضي، بخدمة واضحة ومتابعة من أول التواصل حتى إتمام التعاقد.</p>
+ <div class="hero-actions"><a class="btn gold" href="#listings">تصفح العقارات</a><a class="btn outline" href="#request">سجّل طلبك</a></div>
+ <div class="trust"><span>✓ تعامل واضح</span><span>✓ عقارات في كفر الدوار</span><span>✓ تواصل مباشر</span></div>
+ </div>
+ <div class="hero-art"><div class="art-card"><span>MOHAMED SHEHATA</span><b>REAL ESTATE</b><div class="building"><i></i><i></i><i></i><i></i><i></i></div><small>كفر الدوار • البحيرة</small></div></div>
+</section>
+<section class="search-strip">
+ <div><label for="typeFilter">نوع العقار</label><select id="typeFilter"><option value="">كل الأنواع</option><option>شقة</option><option>بيت</option><option>محل</option><option>أرض</option><option>وحدة إدارية</option></select></div>
+ <div><label for="dealFilter">الغرض</label><select id="dealFilter"><option value="">بيع وإيجار</option><option>للبيع</option><option>للإيجار</option></select></div>
+ <div><label for="areaFilter">المنطقة</label><input id="areaFilter" placeholder="مثال: التمليك"></div>
+ <button class="btn dark" id="filterBtn">بحث عن عقار</button>
+</section>
+<section class="section" id="listings">
+ <div class="section-head"><div><span class="eyebrow">اختيارات عقارية</span><h2>أحدث العقارات</h2><p>تواصل معنا لمعرفة التفاصيل وتحديد موعد المعاينة.</p></div><span class="count" id="count">0 عقار</span></div>
+ <div class="cards" id="cards"></div>
+ <div class="empty" id="empty" hidden>لا توجد عقارات مطابقة حاليًا. <a href="#request">سجّل طلبك وسنساعدك في العثور على المناسب.</a></div>
+</section>
+<section class="request-section" id="request">
+ <div><span class="eyebrow">لم تجد ما تبحث عنه؟</span><h2>اطلب عقارك وسنتواصل معك</h2><p>اكتب مواصفات العقار المطلوب، وسيتم تجهيز رسالة واتساب ببيانات طلبك.</p>
+ <ul><li>حدد شراء أم إيجار</li><li>اكتب المنطقة والميزانية</li><li>أضف وسيلة التواصل المناسبة</li></ul></div>
+ <form id="requestForm" class="request-form">
+  <label>الاسم<input name="name" required placeholder="اسم حضرتك"></label>
+  <div class="form-row"><label>نوع الطلب<select name="deal"><option>شراء</option><option>إيجار</option></select></label><label>نوع العقار<select name="type"><option>شقة</option><option>بيت</option><option>محل</option><option>أرض</option><option>وحدة إدارية</option></select></label></div>
+  <div class="form-row"><label>المنطقة<input name="area" placeholder="المنطقة المطلوبة"></label><label>الميزانية<input name="budget" placeholder="مثال: 7000 جنيه"></label></div>
+  <label>تفاصيل إضافية<textarea name="details" rows="3" placeholder="عدد الغرف أو المساحة أو أي شروط أخرى"></textarea></label>
+  <button class="btn gold full">إرسال الطلب عبر واتساب</button>
+ </form>
+</section>
+<section class="about" id="about"><div class="about-logo">م ش</div><div><span class="eyebrow">من نحن</span><h2>محمد شحاتة للتسويق العقاري</h2><p>خدمات التسويق والوساطة العقارية في كفر الدوار – البحيرة. نساعدك في الوصول إلى العقار المناسب، مع توضيح البيانات والتفاصيل قبل المعاينة والتعاقد.</p><div class="phones"><a href="tel:01034719960">01034719960</a><a href="tel:01200792922">01200792922</a></div></div></section>
+</main>
+<footer><span>© <span id="year"></span> محمد شحاتة للتسويق العقاري</span><a href="admin.html">لوحة إدارة الموقع</a></footer>
+<script src="app.js"></script>
+</body></html>
